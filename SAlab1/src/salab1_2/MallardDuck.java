@@ -3,22 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package salab1;
+package salab1_2;
 
 /**
  *
  * @author GOH
  */
 public class MallardDuck extends Duck{
-    public MallardDuck(){     
-        
+    public MallardDuck(){
+        quackBehaviour = new Quack();
+        flyBehaviour = new FlyWithWings();
+    }
+
+    @Override
+    public void display() {
+        System.out.println("I am real mallard");
     }
     
-    public void display(){
-        System.out.println("I am a real Mallard Duck");
-    }
-    
-    public void setFlyBehaviour(){
-        System.out.println("I am flying");
-    }
+
 }
